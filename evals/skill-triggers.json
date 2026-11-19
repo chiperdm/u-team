@@ -1,0 +1,312 @@
+[
+ {
+  "skill": "kotlin-compose-liquid-glass",
+  "should_trigger": [
+   "Сделай liquid glass нижний бар в Jetpack Compose",
+   "Add an iOS 26 style refractive glass button to my Kotlin Android app"
+  ],
+  "should_not_trigger": [
+   "Add a blur effect to a CSS navbar"
+  ]
+ },
+ {
+  "skill": "flutter-liquid-glass",
+  "should_trigger": [
+   "Нужен liquid glass эффект с преломлением во Flutter",
+   "Make a glass card with lens refraction using a fragment shader in Flutter"
+  ],
+  "should_not_trigger": [
+   "Add Room database to my Kotlin app"
+  ]
+ },
+ {
+  "skill": "web-liquid-glass-css",
+  "should_trigger": [
+   "Сделай стеклянный navbar для сайта в стиле iOS 26",
+   "How do I use backdrop-filter with SVG displacement for liquid glass?"
+  ],
+  "should_not_trigger": [
+   "Write a Node rate limiter"
+  ]
+ },
+ {
+  "skill": "html-site-builder",
+  "should_trigger": [
+   "Сделай лендинг для моего приложения",
+   "Build a portfolio website in plain HTML and CSS"
+  ],
+  "should_not_trigger": [
+   "Fix a null pointer crash in my Kotlin service"
+  ]
+ },
+ {
+  "skill": "css-modern-layout",
+  "should_trigger": [
+   "Страница ползёт вбок на телефоне, поправь вёрстку",
+   "Use container queries and clamp for a responsive card grid"
+  ],
+  "should_not_trigger": [
+   "Set up GitHub Actions for Flutter"
+  ]
+ },
+ {
+  "skill": "web-performance-seo",
+  "should_trigger": [
+   "Как поднять Lighthouse и SEO моего сайта?",
+   "My LCP is 4s, how do I optimize images and fonts?"
+  ],
+  "should_not_trigger": [
+   "Write an ADR for the database choice"
+  ]
+ },
+ {
+  "skill": "web-motion-scroll",
+  "should_trigger": [
+   "Добавь анимации появления секций при скролле",
+   "Implement scroll-driven animations and view transitions on my site"
+  ],
+  "should_not_trigger": [
+   "Optimize a Postgres query"
+  ]
+ },
+ {
+  "skill": "html-single-file-app",
+  "should_trigger": [
+   "Сделай мессенджер-прототип в одном HTML файле",
+   "Fix my single-file HTML app, localStorage sometimes throws"
+  ],
+  "should_not_trigger": [
+   "Configure nginx for websockets"
+  ]
+ },
+ {
+  "skill": "html5-canvas-game-loop",
+  "should_trigger": [
+   "Сделай HTML5 игру типа Tomb of the Mask",
+   "My canvas game runs faster on 144Hz screens, fix the loop"
+  ],
+  "should_not_trigger": [
+   "Add OTP login to the backend"
+  ]
+ },
+ {
+  "skill": "kotlin-compose-foundations",
+  "should_trigger": [
+   "Экран на Compose постоянно рекомпозируется, помоги",
+   "Review my Jetpack Compose screen for state hoisting and performance"
+  ],
+  "should_not_trigger": [
+   "Write a Dockerfile for Node"
+  ]
+ },
+ {
+  "skill": "compose-motion-gestures",
+  "should_trigger": [
+   "Сделай свайп для удаления и пружинную анимацию в Compose",
+   "Implement a draggable sheet with fling in Jetpack Compose"
+  ],
+  "should_not_trigger": [
+   "Add CORS to an Express API"
+  ]
+ },
+ {
+  "skill": "kotlin-coroutines-flow",
+  "should_trigger": [
+   "StateFlow не обновляет UI, и корутины утекают",
+   "Wrap a WebSocket callback in a Flow with callbackFlow"
+  ],
+  "should_not_trigger": [
+   "Make the landing page dark mode"
+  ]
+ },
+ {
+  "skill": "android-architecture-room",
+  "should_trigger": [
+   "Как организовать Room, Hilt и ViewModel в моём приложении?",
+   "Add Room migrations and an offline-first repository"
+  ],
+  "should_not_trigger": [
+   "Style a button with glassmorphism in CSS"
+  ]
+ },
+ {
+  "skill": "flutter-kotlin-platform-channels",
+  "should_trigger": [
+   "MissingPluginException при вызове нативного Kotlin из Flutter",
+   "Add a MethodChannel to start an Android service from Flutter"
+  ],
+  "should_not_trigger": [
+   "Explain STRIDE threat modeling"
+  ]
+ },
+ {
+  "skill": "android-voice-assistant",
+  "should_trigger": [
+   "Сделай голосовую активацию ассистента на Android",
+   "How do I keep a wake word listener running with a microphone foreground service?"
+  ],
+  "should_not_trigger": [
+   "Create a Flutter chat list"
+  ]
+ },
+ {
+  "skill": "android-overlay-accessibility",
+  "should_trigger": [
+   "Нужен HUD поверх всех окон и управление телефоном через AccessibilityService",
+   "ViewTreeLifecycleOwner not found in my overlay ComposeView"
+  ],
+  "should_not_trigger": [
+   "Write an RLS policy"
+  ]
+ },
+ {
+  "skill": "design-system-tokens",
+  "should_trigger": [
+   "Сделай единые цвета и отступы для web, Compose и Flutter",
+   "Generate design tokens with dark mode and contrast checks"
+  ],
+  "should_not_trigger": [
+   "Debug a crash on Android 14"
+  ]
+ },
+ {
+  "skill": "ui-design-review",
+  "should_trigger": [
+   "Интерфейс выглядит дёшево и скучно, что исправить?",
+   "Review my app's UI for hierarchy, spacing and generic AI look"
+  ],
+  "should_not_trigger": [
+   "Add pagination to an API"
+  ]
+ },
+ {
+  "skill": "flutter-testing",
+  "should_trigger": [
+   "Напиши widget тесты и golden тесты для Flutter экрана",
+   "pumpAndSettle times out in my Flutter test"
+  ],
+  "should_not_trigger": [
+   "Set up Render deployment"
+  ]
+ },
+ {
+  "skill": "flutter-navigation",
+  "should_trigger": [
+   "go_router уходит в бесконечный редирект",
+   "Add deep links and a bottom tab shell to my Flutter app"
+  ],
+  "should_not_trigger": [
+   "Optimize SQL index"
+  ]
+ },
+ {
+  "skill": "backend-api-design-validation",
+  "should_trigger": [
+   "Спроектируй REST API и валидацию на zod",
+   "Standardize error responses and pagination for my Express API"
+  ],
+  "should_not_trigger": [
+   "Make the glass bar blur on Android"
+  ]
+ },
+ {
+  "skill": "devops-docker-nginx",
+  "should_trigger": [
+   "Задеплой Node бэкенд на VPS с Docker и nginx",
+   "nginx drops my websocket connection after 60 seconds"
+  ],
+  "should_not_trigger": [
+   "Write a Compose animation"
+  ]
+ },
+ {
+  "skill": "devops-render-deploy",
+  "should_trigger": [
+   "Деплой на Render падает: no open ports detected",
+   "Write render.yaml for my Node API and static site"
+  ],
+  "should_not_trigger": [
+   "Review E2EE key exchange"
+  ]
+ },
+ {
+  "skill": "termux-android-dev",
+  "should_trigger": [
+   "Не работает npm install в Termux",
+   "Set up a Node development workflow on my phone with Termux"
+  ],
+  "should_not_trigger": [
+   "Optimize Flutter list jank"
+  ]
+ },
+ {
+  "skill": "e2ee-messaging-review",
+  "should_trigger": [
+   "Проверь, правда ли наш мессенджер сквозной шифрованный",
+   "Review our key exchange and backup design for E2EE"
+  ],
+  "should_not_trigger": [
+   "Add a loading spinner to a button"
+  ]
+ },
+ {
+  "skill": "llm-integration-safety",
+  "should_trigger": [
+   "Подключи OpenRouter к приложению так, чтобы ключ не утёк",
+   "Protect my assistant's tool calling from prompt injection"
+  ],
+  "should_not_trigger": [
+   "Write a CSS grid layout"
+  ]
+ },
+ {
+  "skill": "refactoring-characterization",
+  "should_trigger": [
+   "Разбей огромный файл на модули без поломок",
+   "Refactor this legacy class safely, there are no tests"
+  ],
+  "should_not_trigger": [
+   "Add a new feature screen"
+  ]
+ },
+ {
+  "skill": "code-review-practice",
+  "should_trigger": [
+   "Сделай ревью моего PR",
+   "Review the diff before I merge"
+  ],
+  "should_not_trigger": [
+   "Write a landing page"
+  ]
+ },
+ {
+  "skill": "telegram-bot-development",
+  "should_trigger": [
+   "Сделай Telegram бота с квизом и SQLite",
+   "My bot gets 409 conflict errors"
+  ],
+  "should_not_trigger": [
+   "Create Android overlay HUD"
+  ]
+ },
+ {
+  "skill": "supabase-realtime-storage",
+  "should_trigger": [
+   "Supabase realtime подписка не получает события",
+   "Upload chat media to Supabase Storage with private bucket policies"
+  ],
+  "should_not_trigger": [
+   "Write a Dockerfile"
+  ]
+ },
+ {
+  "skill": "firebase-rules-auth",
+  "should_trigger": [
+   "Напиши правила Firestore для чата",
+   "permission-denied in Firestore, fix my security rules"
+  ],
+  "should_not_trigger": [
+   "Design CSS tokens"
+  ]
+ }
+]

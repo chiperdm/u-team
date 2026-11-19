@@ -1,0 +1,11 @@
+# Site Brief
+- What it is (one sentence):
+- Audience:
+- ONE primary action:
+- Tone / design direction:
+- Languages (ru / kk / en):
+- Sections wanted (or "agent decides"):
+- Real content available (copy, screenshots, logos, links):
+- Hosting target and domain:
+- Must-have integrations (forms, analytics, maps):
+- Assumptions made by the agent:

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product name: what it does | Brand</title>
+<meta name="description" content="One sentence that says who it is for and what they get.">
+<meta name="theme-color" content="#0b0d12">
+<style>
+  /* ---------- tokens ---------- */
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7fb; --surface: #ffffff; --text: #14161c; --muted: #5a6072;
+    --accent: #5b4bff; --accent-contrast: #ffffff; --border: rgb(20 22 28 / .12);
+    --radius: 16px; --shadow: 0 8px 30px rgb(20 22 28 / .08);
+    --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-6: 1.5rem; --space-8: 2rem; --space-12: 3rem; --space-16: 4rem; --space-24: 6rem;
+    --fs-0: clamp(1rem, .96rem + .2vw, 1.125rem);
+    --fs-1: clamp(1.25rem, 1.1rem + .6vw, 1.6rem);
+    --fs-2: clamp(1.6rem, 1.3rem + 1.4vw, 2.4rem);
+    --fs-3: clamp(2.2rem, 1.6rem + 3vw, 4rem);
+    --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0d12; --surface: #141824; --text: #eef0f6; --muted: #98a0b5; --accent: #8a7dff; --accent-contrast: #0b0d12; --border: rgb(255 255 255 / .12); --shadow: 0 8px 30px rgb(0 0 0 / .45); }
+  }
+  /* ---------- base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { margin: 0; font: var(--fs-0)/1.6 var(--font); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+  img, svg, video { max-width: 100%; height: auto; display: block; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: -999px; top: 0; background: var(--accent); color: var(--accent-contrast); padding: .5rem 1rem; z-index: 100; }
+  .skip:focus { left: 1rem; top: 1rem; }
+  .wrap { width: min(1120px, 100% - 2rem); margin-inline: auto; }
+  section { padding-block: clamp(3rem, 8vw, 7rem); }
+  h1, h2, h3 { line-height: 1.12; margin: 0 0 var(--space-4); letter-spacing: -.02em; text-wrap: balance; }
+  h1 { font-size: var(--fs-3); } h2 { font-size: var(--fs-2); } h3 { font-size: var(--fs-1); }
+  p { margin: 0 0 var(--space-4); max-width: 68ch; } .muted { color: var(--muted); }
+  /* ---------- components ---------- */
+  header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px) saturate(150%); background: color-mix(in srgb, var(--bg) 78%, transparent); border-bottom: 1px solid var(--border); }
+  nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 4rem; }
+  nav ul { display: flex; gap: var(--space-6); list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; color: var(--text); } nav a:hover { color: var(--accent); }
+  .logo { font-weight: 800; letter-spacing: -.03em; text-decoration: none; color: var(--text); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 2.9rem; padding: 0 1.4rem; border-radius: 999px; font-weight: 650; text-decoration: none; border: 1px solid transparent; transition: transform .2s ease, box-shadow .2s ease; }
+  .btn-primary { background: var(--accent); color: var(--accent-contrast); box-shadow: var(--shadow); }
+  .btn-ghost { border-color: var(--border); color: var(--text); }
+  .btn:hover { transform: translateY(-2px); }
+  .hero { display: grid; gap: var(--space-12); align-items: center; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+  .hero-visual { aspect-ratio: 4 / 3; border-radius: calc(var(--radius) * 1.5); background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 70%, #fff), color-mix(in srgb, var(--accent) 20%, var(--bg))); box-shadow: var(--shadow); }
+  .grid { display: grid; gap: var(--space-6); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--space-6); box-shadow: var(--shadow); }
+  details { border-bottom: 1px solid var(--border); padding-block: var(--space-4); }
+  summary { cursor: pointer; font-weight: 650; }
+  .cta { text-align: center; background: var(--surface); border: 1px solid var(--border); border-radius: calc(var(--radius) * 2); padding: clamp(2rem, 6vw, 5rem) var(--space-6); }
+  .cta p { margin-inline: auto; }
+  footer { border-top: 1px solid var(--border); padding-block: var(--space-8); color: var(--muted); font-size: .95rem; }
+  /* reveal on scroll (progressive enhancement, see JS below) */
+  .js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+  .js .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } .js .reveal { opacity: 1; transform: none; } }
+  @media (max-width: 640px) { nav ul { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="logo" href="#top">Brand</a>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#get">Get started</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section id="top">
+    <div class="wrap hero">
+      <div>
+        <h1>Say what you do in twelve words</h1>
+        <p class="muted">One honest sentence about who it is for and the result they get. No buzzwords.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#get">Primary action</a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Replace with a product screenshot"></div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>Features that earn their place</h2>
+      <div class="grid">
+        <article class="card reveal"><h3>Feature one</h3><p class="muted">Concrete benefit in one or two sentences.</p></article>
+        <article class="card reveal"><h3>Feature two</h3><p class="muted">Concrete benefit in one or two sentences.</p></article>
+        <article class="card reveal"><h3>Feature three</h3><p class="muted">Concrete benefit in one or two sentences.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="grid" style="list-style:none;padding:0">
+        <li class="card reveal"><h3>1. Start</h3><p class="muted">First step.</p></li>
+        <li class="card reveal"><h3>2. Do</h3><p class="muted">Second step.</p></li>
+        <li class="card reveal"><h3>3. Done</h3><p class="muted">Third step.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <details><summary>Is it free?</summary><p class="muted">Answer the real objection directly.</p></details>
+      <details><summary>Is my data safe?</summary><p class="muted">Say exactly what is stored and where.</p></details>
+    </div>
+  </section>
+
+  <section id="get">
+    <div class="wrap cta reveal">
+      <h2>Ready when you are</h2>
+      <p class="muted">Repeat the primary action.</p>
+      <a class="btn btn-primary" href="#top">Primary action</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="y">2026</span> Brand. <a href="#">Privacy</a> · <a href="mailto:hello@example.com">Contact</a></div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const io = 'IntersectionObserver' in window
+    ? new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 })
+    : null;
+  document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+</script>
+</body>
+</html>

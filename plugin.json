@@ -1,0 +1,11 @@
+{
+  "name": "u-org-ai-team",
+  "displayName": "U-ORG AI Team v5",
+  "version": "5.0.0",
+  "description": "Full-stack AI engineering team bundle: 28 specialized agents, 66 deep skill playbooks (Android/Compose, Flutter, Liquid Glass, Web/HTML/CSS, Node/Realtime, Supabase/Firebase, Security/E2EE, LLM safety, DevOps), 14 mandatory rules, and 23 workflows.",
+  "suggestedPrompts": [
+    "Build a responsive HTML/CSS/JS website with Liquid Glass effects",
+    "Audit this codebase for security, E2EE, and performance issues",
+    "Plan and implement a Jetpack Compose or Flutter feature safely"
+  ]
+}

@@ -1,0 +1,12 @@
+# UI Change Specification
+- Screen/component:
+- User goal:
+- Existing behavior to preserve:
+- Visual reference:
+- Theme(s):
+- Viewport/device:
+- Interaction states:
+- Accessibility requirements:
+- Performance constraints:
+- Acceptance screenshots:
+- Rollback:

@@ -1,0 +1,11 @@
+# Agent Task
+- Objective:
+- In scope:
+- Out of scope:
+- Owned files:
+- Read-only or edit:
+- Dependencies:
+- Acceptance criteria:
+- Required tests:
+- Risks:
+- Handoff format:

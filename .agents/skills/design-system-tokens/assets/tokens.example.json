@@ -1,0 +1,21 @@
+{
+  "color": {
+    "light": {
+      "bg": "#f7f7fb", "surface": "#ffffff", "text": "#14161c", "muted": "#5a6072",
+      "accent": "#5b4bff", "onAccent": "#ffffff", "border": "#14161c1f",
+      "danger": "#c62828", "success": "#1b7f3b"
+    },
+    "dark": {
+      "bg": "#0b0d12", "surface": "#141824", "text": "#eef0f6", "muted": "#98a0b5",
+      "accent": "#8a7dff", "onAccent": "#0b0d12", "border": "#ffffff1f",
+      "danger": "#ff8a80", "success": "#6fdc8c"
+    }
+  },
+  "space": { "1": 4, "2": 8, "3": 12, "4": 16, "6": 24, "8": 32, "12": 48, "16": 64 },
+  "radius": { "sm": 8, "md": 16, "lg": 28, "pill": 999 },
+  "duration": { "fast": 150, "base": 250, "slow": 400 },
+  "glass": {
+    "sigma": 16, "tintAlphaDark": 0.10, "tintAlphaLight": 0.55, "borderAlpha": 0.22,
+    "refraction": 0.6, "depth": 24, "fallbackDark": "#1c1f26", "fallbackLight": "#f1f2f7"
+  }
+}

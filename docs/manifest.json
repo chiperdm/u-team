@@ -1,0 +1,10 @@
+{
+  "name": "U-ORG AI Team v5",
+  "agents": 28,
+  "skills": 66,
+  "rules": 14,
+  "commands": 23,
+  "hooks": 3,
+  "workflows": 7,
+  "templates": 8
+}
