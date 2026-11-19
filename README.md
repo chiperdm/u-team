@@ -1,4 +1,4 @@
-# 🚀 U-ORG AI Team v5
+# 🚀 U-Team (v1.0.0)
 
 > **Autonomous multi-agent engineering team for Antigravity, Claude Code, Cursor, and agentic workflows.**  
 > A structured software development pack providing role-based agents, playbooks, guardrails, and automated verification.
@@ -23,7 +23,7 @@
 
 ## 🎯 Engineering Philosophy
 
-Most AI code assistants behave as isolated code generators. **U-ORG AI Team v5** organizes agents as a coordinated engineering team with strict operational discipline:
+Most AI code assistants behave as isolated code generators. **U-Team** organizes agents as a coordinated engineering team with strict operational discipline:
 
 1. **Mandatory Preflight**: Inspect working tree state, manifests, dependencies, and architectural contracts before writing any code.
 2. **Preserve Existing Architecture**: Zero arbitrary refactors, library swaps, or mass reformatting. Modifications stay minimal, focused, and testable.
@@ -156,8 +156,8 @@ Every action performed by the team is governed by 14 explicit rules:
 Clone or copy the pack directly into your Antigravity plugins directory:
 
 ```bash
-mkdir -p ~/.gemini/config/plugins/u-org-ai-team
-cp -r . ~/.gemini/config/plugins/u-org-ai-team/
+mkdir -p ~/.gemini/config/plugins/u-team
+cp -r . ~/.gemini/config/plugins/u-team/
 ```
 
 Antigravity will automatically discover the bundle through `plugin.json`.

@@ -127,7 +127,7 @@ if bad:
     print("\n".join(bad)); sys.exit(1)
 
 # ---------- derived docs ----------
-(base / "docs" / "manifest.json").write_text(json.dumps({"name": "U-ORG AI Team v5", **counts}, indent=2) + "\n")
+(base / "docs" / "manifest.json").write_text(json.dumps({"name": "U-Team", **counts}, indent=2) + "\n")
 by_domain = {}
 for n in sorted(skills): by_domain.setdefault(domains[n], []).append(n)
 users = {}
